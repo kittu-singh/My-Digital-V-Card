@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#070909">
+
+    <title>Kittu Graphics</title>
+    
+    <meta name="description" content="Kittu Graphics - Digital Printing, Flex Printing, Mug Printing, T-Shirt Printing, Photo Printing, Laser Engraving and Customized Gifts.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kittu Graphics">
+<meta property="og:title" content="Kittu Graphics - Printing & Gift Studio">
+<meta property="og:description" content="All Types of Printing, Customized Gifts, Graphic Designing and Laser Engraving.">
+
+<meta property="og:url" content="https://my-digiatl-card.vercel.app/">
+<meta property="og:image" content="https://i.postimg.cc/hv2B4jTw/image.jpg">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <style>
+/* =================================
+   RESET
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+
+    background:#050707;
+
+    color:#fff;
+
+    min-height:100vh;
+}
+ 
+a{
+    text-decoration:none;
+
+    color:inherit;
+}
+
+
+
+/* =================================
+   BACKGROUND
+================================= */
+
+body::before{
+    content:"";
+
+    position:fixed;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:#420ca5;
+
+    opacity:.055;
+
+    filter:blur(120px);
+
+    top:-180px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    pointer-events:none;
+}
+
+
+/* =================================
+   PAGE
+================================= */
+
+.page{
+    width:100%;
+
+    min-height:100vh;
+
+    padding:25px 15px;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+.card{
+    width:100%;
+
+    max-width:520px;
+
+    overflow:hidden;
+
+    background:
+
+    radial-gradient(
+        circle at 50% 0%,
+        rgba(66, 209, 228, 0.11),
+        transparent 35%
+    ),
+
+    #0230649d;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:34px;
+
+    box-shadow:
+
+    0 35px 100px rgba(0,0,0,.8),
+
+    inset 0 1px 0 rgba(240, 237, 237, 0.05);
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero{
+    position:relative;
+
+    text-align:center;
+
+    padding:38px 25px 32px;
+}
+
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+
+    left:13%;
+
+    right:13%;
+
+    bottom:0;
+
+    height:1px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        #35c7ad,
+        transparent
+    );
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.logo-box{
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:#7935c7;
+
+    border:2px solid rgba(255,255,255,.06);
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.55),
+
+    0 0 0 1px rgba(53,199,173,.5);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+
+
+.logo-box img{
+    height:100%;
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    object-position:center;
+}
+
+
+/* =================================
+   BRAND
+================================= */
+
+.hero h1{
+    margin-top:22px;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size:38px;
+    line-height:1;
+
+    letter-spacing:.2px;
+}
+
+.line{
+    width:55px;
+
+    height:2px;
+
+    margin:13px auto 0;
+
+    border-radius:5px;
+
+    background:#35c7ad;
+}
+
+.tagline{
+    margin-top:10px;
+
+    color:#ffffff;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* =================================
+   OWNER
+================================= */
+
+.owner{
+    margin:28px auto 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    width:max-content;
+
+    max-width:100%;
+
+    gap:10px;
+
+    padding:0;
+
+    background:transparent;
+
+    border:0;
+}
+
+
+/* BIG OWNER PHOTO */
+
+.owner-photo{
+    width:180px;
+
+    height:190px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:#550737;
+
+    border:3px solid #ffffff;
+
+    flex-shrink:0;
+
+    box-shadow:
+
+    0 12px 35px rgba(146, 97, 97, 0.55),
+
+    0 0 0 5px rgba(53,199,173,.08);
+}
+
+.owner-photo img{
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+}
+
+
+.owner-info{
+    text-align:center;
+}
+
+.owner-info span{
+    display:block;
+
+    color:#eee8e8;
+
+    font-size:13px;
+
+    letter-spacing:1.6px;
+
+    font-weight:600;
+}
+
+.owner-info strong{
+    display:block;
+
+    margin-top:4px;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+}
+
+
+/* =================================
+   ACTIONS
+================================= */
+
+.actions{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:9px;
+
+    padding:22px 20px;
+}
+
+.action{
+    min-height:82px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(236, 229, 229, 0.08);
+
+    border-radius:18px;
+
+    transition:.25s ease;
+}
+
+.action:hover{
+    transform:translateY(-4px);
+
+    border-color:#35c7ad;
+
+    background:#121616;
+}
+
+.action-icon{
+    width:39px;
+
+    height:39px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:#ec0505;
+
+    color:#f9fcfb;
+
+    font-size:17px;
+}
+
+.action span{
+    color:#000000;
+
+    font-size:9px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+}
+
+
+/* =================================
+   WHATSAPP
+================================= */
+
+.whatsapp{
+    color:#e1e9e5;
+}
+
+.whatsapp-bg{
+    color:#95ac9a;
+}
+
+
+/* =================================
+   SECTIONS
+================================= */
+
+.section{
+    padding:0 20px 25px;
+}
+
+.section-title{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:13px;
+}
+
+.section-title span{
+    width:4px;
+
+    height:20px;
+
+    border-radius:5px;
+
+    background:#f1f1f1;
+}
+
+.section-title h2{
+    font-size:17px;
+
+    font-weight:700;
+}
+
+
+/* =================================
+   ABOUT
+================================= */
+
+.about{
+    
+    position:relative;
+
+    overflow:hidden;
+
+    padding:21px;
+
+    border-radius:20px;
+
+    background:#f1f1f1;
+
+    border:1px solid rgb(10, 0, 1);
+}
+
+.about::after{
+    
+
+    position:absolute;
+
+    right:-12px;
+
+    bottom:-35px;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:100px;
+
+    color:#000c0a;
+
+    opacity:.025;
+}
+
+.quote{
+    color:#000000;
+
+    font-family:Georgia,serif;
+
+    font: size 35px;
+
+    line-height:.5;
+
+    margin-bottom:10px;
+}
+
+.about p{
+    position:relative;
+
+    z-index:2;
+
+    color:#000000;
+
+    font-size:13.5px;
+
+    line-height:1.8;
+
+    margin-bottom:8px;
+}
+
+.about p:last-child{
+    margin-bottom:0;
+}
+
+.about strong{
+    color:#ff0000;
+}
+
+
+/* =================================
+   CONTACT
+================================= */
+
+.contact-list{
+    display:grid;
+
+    gap:9px;
+}
+
+.contact{
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    padding:13px;
+
+    border-radius:17px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(255, 252, 252, 0.904);
+
+    transition:.25s;
+}
+
+.contact:hover{
+    border-color:#fcfffe;
+
+    transform:translateX(2px);
+}
+
+.contact-icon{
+    width:44px;
+
+    height:44px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:#171b1b;
+
+    color:#08e2ba;
+
+    font-size:17px;
+}
+
+.contact-content{
+    flex:1;
+}
+
+.contact-content small{
+    display:block;
+
+    color:#d4e9e9;
+
+    font-size:8px;
+
+    letter-spacing:1.4px;
+
+    font-weight:600;
+}
+
+.contact-content strong{
+    display:block;
+
+    margin-top:3px;
+
+    color:#eee;
+
+    font-size:12px;
+
+    font-weight:600;
+}
+
+.arrow{
+    color:#555;
+
+    font-size:10px;
+
+    margin-right:4px;
+}
+
+
+/* =================================
+   WEBSITE
+================================= */
+
+.website{
+    display:block;
+
+    margin-top:10px;
+
+    padding:15px;
+
+    text-align:center;
+
+    border-radius:17px;
+
+    border:1px solid rgba(252, 252, 252, 0.932);
+
+    background:rgba(244, 250, 249, 0.932);
+
+    color:#7e3535f5;
+
+    font-size:12px;
+
+    font-weight:700;
+}
+
+
+/* =================================
+   SAVE CONTACT
+================================= */
+
+.save-section{
+    padding: 7px;
+}
+
+.save-contact{
+    width: 100%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px;
+
+    border-radius:18px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #f12005,
+        #ee0707
+    );
+
+    color:#fbfffe;
+
+    box-shadow:
+
+    0 15px 35px rgba(156, 194, 187, 0.14);
+
+    transition:.25s;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    text-align:left;
+}
+
+.save-contact:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 20px 40px rgba(53,199,173,.22);
+}
+
+.save-icon{
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:rgba(230, 221, 221, 0.12);
+
+    font-size:18px;
+
+    color:#fbfffe;
+
+    flex-shrink:0;
+}
+
+.save-contact strong{
+    display:block;
+
+    font-size:19px;
+
+    color:#fbfffe;
+}
+
+.save-contact small{
+    display:block;
+
+    margin-top:2px;
+
+    font-size:13px;
+
+    opacity:.65;
+
+    color:#fbfffe;
+}
+
+.save-arrow{
+    margin-left:auto;
+
+    font-size:14px;
+
+    color:#fbfffe;
+}
+
+
+
+/* =================================
+   SOCIAL MEDIA
+================================= */
+
+.section-title h2{
+    font-size:15px;
+    font-weight:400;
+}
+
+.social-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap: 12px;
+}
+  
+
+ 
+
+.social{
+    padding:14px 7px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    border-radius:17px;
+
+    background:#707272;
+
+    border:1px solid rgba(255, 255, 255, 0.08);
+
+    transition:.25s;
+    
+    
+}
+
+.social:hover{
+    transform:translateY(-2px);
+
+    border-color:#35c7ad;
+}
+
+.social-icon{
+    width:41px;
+
+    height:41px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#f7f8f8;
+
+    font-size:18px;
+}
+
+.social span{
+    color:#fbffff;
+
+    font-size:12px;
+
+    font-weight:600;
+}
+
+
+/* INSTAGRAM */
+
+.instagram{
+    color:#e4405f;
+}
+
+
+/* FACEBOOK */
+
+.facebook{
+    color:#1877f2;
+}
+
+
+/* YOUTUBE */
+
+.youtube{
+    color:#ff0000;
+}
+
+
+/* =================================
+   LOCATION
+================================= */
+
+.location{
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    border-radius:20px;
+
+    background:#fffefe;
+
+    border:1px solid rgba(221, 127, 127, 0.08);
+}
+
+.location-icon{
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:#ff0101d7;
+
+    color:#f8f0f0;
+}
+
+.location-info strong{
+    font-size:13px;
+    color:#d10808a6;
+}
+
+.location-info p{
+    margin-top:3px;
+
+    color:#000000;
+
+    font-size:10px;
+}
+
+.map-button{
+    width:100%;
+
+    padding:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:7px;
+
+    border-radius:13px;
+
+    background:#e60505;
+
+    color:#ecf3f2;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+}
+
+
+/* =================================
+   BOTTOM
+================================= */
+
+.bottom{
+    padding:24px 20px 27px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.07);
+}
+
+.bottom span{
+    color:#f4f7f6;
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+}
+
+.bottom-line{
+    width:35px;
+
+    height:1px;
+
+    margin:10px auto;
+
+    background:#35c7ad;
+
+    opacity:.5;
+}
+
+.bottom small{
+    color:#555;
+
+    font-size:9px;
+
+    letter-spacing:1px;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media(max-width:430px){
+
+    .page{
+        padding:0;
+    }
+
+    .card{
+        min-height:100vh;
+
+        border-radius:0;
+
+        border-left:0;
+
+        border-right:0;
+    }
+
+    .hero{
+        padding-top:35px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .actions{
+        padding-left:15px;
+
+        padding-right:15px;
+    }
+
+    .section{
+        padding-left:15px;
+
+        padding-right:15px;
+    }
+
+    .save-section{
+        padding-left:15px;
+
+        padding-right:15px;
+    }
+
+}
+
+
+@media(max-width:360px){
+
+    .actions{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .social-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+<div class="card">
+
+
+    <!-- =================================
+         HERO
+    ================================== -->
+
+    <header class="hero">
+
+
+        <!-- LOGO -->
+
+        <div class="logo-box">
+
+            <img src="https://i.postimg.cc/JhstfwVD/logo-kt.jpg"
+                 alt="Kittu Graphics Logo"
+                 loading="eager">
+
+        </div>
+
+
+
+        <!-- BRAND -->
+
+        <h1>
+            Kittu Graphics
+        </h1>
+
+
+        <div class="line"></div>
+
+
+        <p class="tagline">
+            Creative • Premium • Professional
+        </p>
+
+
+
+        <!-- OWNER -->
+
+        <div class="owner">
+
+
+            <div class="owner-photo">
+
+                <img src="https://i.postimg.cc/hv2B4jTw/image.jpg"
+                     alt="Kumar Pintu"
+                     loading="eager">
+
+            </div>
+
+
+            <div class="owner-info">
+
+                <span>
+                    Owner
+                </span>
+
+                <strong>
+                     Kumar Pintu
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN ACTION BUTTONS
+    ================================== -->
+
+    <section class="actions">
+
+
+        <!-- CALL -->
+
+        <a href="tel:+919811351107"
+           class="action">
+
+            <div class="action-icon call">
+
+                <i class="fa-solid fa-phone"></i>
+
+            </div>
+
+            <span>
+                Call
+            </span>
+
+        </a>
+
+
+
+        <!-- WHATSAPP -->
+
+        <a href="https://wa.me/919811351107"
+           target="_blank"
+           class="action">
+
+            <div class="action-icon whatsapp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </div>
+
+            <span>
+                WhatsApp
+            </span>
+
+        </a>
+
+
+
+        <!-- EMAIL -->
+
+        <a href="mailto:kittugraphics09@gmail.com"
+           class="action">
+
+            <div class="action-icon email">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </div>
+
+            <span>
+                Email
+            </span>
+
+        </a>
+
+
+
+        <!-- WEBSITE -->
+
+        <a href="https://kittu-singh.github.io/kittu-graphics-website-1/"
+           target="_blank"
+           class="action">
+
+            <div class="action-icon website-icon">
+
+                <i class="fa-solid fa-globe"></i>
+
+            </div>
+
+            <span>
+                Website
+            </span>
+
+        </a>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         ABOUT US
+    ================================== -->
+
+    <section class="section">
+
+
+        <div class="section-title">
+
+            <span></span>
+
+            <h2>
+                About Us
+            </h2>
+
+        </div>
+
+
+
+        <div class="about">
+
+            <p>
+
+                " <strong>Kittu Graphics</strong>
+                is a creative printing and
+                customization studio focused on
+                quality, creativity and professional
+                designs.  We create customized printing
+                solutions for businesses,
+                celebrations, gifts and personal
+                requirements."
+
+            </p>
+            
+        </div>
+
+
+    </section>
+
+    <!-- =================================
+         SAVE CONTACT
+    ================================== -->
+
+    <div class="save-section">
+
+    <button type="button"
+        onclick="saveContact()"
+        class="save-contact">
+
+    <div class="save-icon">
+        <i class="fa-solid fa-address-card"></i>
+    </div>
+
+    <div>
+        <strong>SAVE CONTACT</strong>
+
+        <small>
+            Save Kittu Graphics to your phone
+        </small>
+    </div>
+
+    <i class="fa-solid fa-download save-arrow"></i>
+    
+
+</button>
+
+    </div>
+
+
+    <!-- =================================
+         SOCIAL MEDIA
+    ================================== -->
+
+    <section class="section">
+
+
+        <div class="section-title">
+
+            <span></span>
+
+            <h2>
+                Follow Us:
+            </h2>
+
+        </div>
+
+
+
+        <div class="social-grid">
+
+
+            <!-- INSTAGRAM -->
+
+            <a href="https://www.instagram.com/kittu_graphics?igsh=eWg0Mm5hbWowM296"
+               target="_blank"
+               class="social">
+
+
+                <div class="social-icon instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </div>
+
+
+                <span>
+                    Instagram
+                </span>
+
+
+            </a>
+
+
+
+            <!-- FACEBOOK -->
+
+            <a href="https://www.facebook.com/share/1BUM9ScPSy"
+               target="_blank"
+               class="social">
+
+
+                <div class="social-icon facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </div>
+
+
+                <span>
+                    Facebook
+                </span>
+
+
+            </a>
+
+
+
+            <!-- YOUTUBE -->
+
+            <a href="https://youtube.com/@kittugraphics?si=MqNrzxVkN-6fCLa6"
+               target="_blank"
+               class="social">
+
+
+                <div class="social-icon youtube">
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+
+
+                <span>
+                    YouTube
+                </span>
+
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         LOCATION
+    ================================== -->
+
+    <section class="section">
+
+
+        <div class="section-title">
+
+            <span></span>
+
+            <h2>
+                Visit Us
+            </h2>
+
+        </div>
+
+
+
+        <div class="location">
+
+
+            <div class="location-icon">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+
+            <div class="location-info">
+
+                <strong>
+                    Kittu Graphics
+                </strong>
+
+
+                <p>
+                    Gali No,8 Saink Vihar Phase,2 Mohan Garden New Delhi-110059
+                </p>
+
+            </div>
+
+
+            <a href="https://maps.app.goo.gl/pbt6V3bYJ54Uyqsf7?g_st=aw"
+               target="_blank"
+               class="map-button">
+
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                Open Map
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         BOTTOM
+    ================================== -->
+
+    <div class="bottom">
+
+
+        <span>
+            Design & Developed By Kittu Rajput
+        </span>
+        
+        <div class="bottom-line"></div>
+
+
+        
+
+    </div>
+
+
+</div>
+
+</div>
+
+<script>
+function saveContact() {
+
+    const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Kittu Graphics
+ORG:Kittu Graphics
+TEL;TYPE=CELL:+919811351107
+EMAIL:kittugraphics09@gmail.com
+ADR;TYPE=WORK:;;Mohan Garden;New Delhi;;;India
+URL:https://kittu-graphics.vercel.app/
+END:VCARD`;
+
+    const blob = new Blob([vcard], {
+        type: "text/vcard;charset=utf-8"
+    });
+
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = "Kittu-Graphics.vcf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>
